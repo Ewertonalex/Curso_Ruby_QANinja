@@ -34,10 +34,10 @@ describe ContaCorrente do
                 @conta = ContaCorrente.new(0.00)
                 @conta.saca(100.00)
             end
-            it 'Vejo mensagem' do
+            it 'Então exibi mensagem' do
                 expect(@conta.mensagem).to eql 'Saldo insuficiente para saque'
             end
-            it 'Meu saldo permanece com zero' do
+            it 'E saldo final com zeros' do
                 expect(@conta.saldo).to eql 0.00
             end
         end
@@ -47,7 +47,7 @@ describe ContaCorrente do
                 @conta = ContaCorrente.new(100.00)
                 @conta.saca(101.00)
             end
-            it 'Vejo mensagem' do
+            it 'Então exibe mensagem' do
                 expect(@conta.mensagem).to eql 'Saldo insuficiente para saque'
             end
             it 'Meu saldo permanece com valor inicial' do
