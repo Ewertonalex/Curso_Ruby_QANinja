@@ -9,7 +9,7 @@ describe ContaCorrente do
                 @cc.saca(200.00)
             end
             it 'Então atualiza saldo' do
-                expect(@cc.saldo).to eql 800.00
+                expect(@cc.saldo).to eql 795.00
             end
         end
 
